@@ -31,5 +31,13 @@ const stepCounter = {
     },
 
 }
+// stepCounter.increase().increase().increase().decrease().read()
 
-stepCounter.increase().increase().increase().decrease().read()
+// ------------------------------------q3---------------------------------------
+const myArray = [{name: "John", age: 45}, {name: "Sara", age: "20"}, {name: "Mike", age: 26}, {name: "Jonas", age: 14}]
+// use + maybe the value of age is string😉
+function sort(arr) {
+    return arr.sort((a, b) => +a.age - +b.age);
+}
+
+console.log((sort(myArray)))
