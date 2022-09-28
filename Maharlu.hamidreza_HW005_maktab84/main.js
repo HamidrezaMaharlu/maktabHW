@@ -57,4 +57,4 @@ function showNotification({top = 100, right = 100, html = "Hello", className = "
     p.innerHTML = `${html}`;
     message.append(p);
 }
-// showNotification()
+showNotification()
