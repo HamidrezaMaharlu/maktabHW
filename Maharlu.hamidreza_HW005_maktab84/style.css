@@ -1,0 +1,12 @@
+.notification {
+    width: 98vw;
+    height: 98vh;
+    background-color: pink;
+    position: relative;
+}
+.message {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    padding: 1% 3%;
+}
