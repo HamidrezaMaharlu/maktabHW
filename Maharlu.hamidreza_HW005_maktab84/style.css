@@ -42,7 +42,7 @@ section {
     z-index: -1;
 }
 
-.container {
+.login .container {
     box-sizing: border-box;
     width: 400px;
     height: 90vh;
@@ -58,7 +58,7 @@ section {
 
 }
 
-.bi {
+.login .bi {
     background-color: white;
     border-radius: 50%;
     width: 100px;
@@ -220,4 +220,57 @@ a {
     font-size: 13px;
     text-decoration: none;
     color: #e5e5e5;
+}
+
+/*-----------------------------section profile card*/
+.profilePage {
+    background:linear-gradient(0deg, rgba(230,106,254,1) 0%, rgba(254,154,246,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.profilePage .container {
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background:#aa58ce;
+    padding: 30px 30px;
+    font-family: Poppins;
+}
+.profilePage img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.title {
+    font-size: 18px;
+    color: #e5e5e5;
+}
+.bio {
+    font-size: 12px;
+    color: #e5e5e5;
+}
+h3 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+p {
+    margin: 15px 0;
+}
+.profilePage .bi {
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-github,.bi-google,.bi-linkedin {
+    font-size: 20px;
+    color: #aa58ce;
+    margin-right: 15px;
 }
