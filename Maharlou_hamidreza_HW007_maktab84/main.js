@@ -26,5 +26,15 @@ function sort(...args) {
     concat.sort((a, b) => b - a);
     console.log(...concat)
 }
-sort ( [5,6,2] , [3,7,1] , [2,4,8] )
+// sort ( [5,6,2] , [3,7,1] , [2,4,8] )
 
+//---------------------------q1-3-----------------------------------------
+function unique(arr) {
+    const set = new Set(arr);
+    return [...set]
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+alert(unique(values))
