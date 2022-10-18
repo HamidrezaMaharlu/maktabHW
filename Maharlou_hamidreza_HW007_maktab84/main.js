@@ -54,4 +54,20 @@ function aClean(arr) {
     return Object.values(obj);
 }
 
-console.log(aClean(arr))
+// console.log(aClean(arr))
+
+//---------------------------q1-5------------------------------------------
+let map = new Map();
+map.set("name", "John");
+let keys = map.keys();
+
+// Error: keys.push is not a function
+// keys.push("more")
+
+// solution
+// 1. while "map.keys" doesn't return an array (although it can be iterated) we cant use array method on it.
+// 2. if we need array of keys we can use spread operator to convert it to array
+const arrOfKeys =[...keys]
+arrOfKeys.push("more")
+console.log(arrOfKeys)
+
