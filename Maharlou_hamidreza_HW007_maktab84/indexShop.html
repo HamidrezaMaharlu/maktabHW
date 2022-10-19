@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styleShop.css" type="text/css"/>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <section class="video">
+        <video src="./video/clip.mp4" controls loop preload="metadata"></video>
+    </section>
+    <section class="table">
+        <div class="filter">
+            <div class="filter--option"><label for="laptopModel">laptopModel</label>
+                <select id="laptopModel" onchange="select(event)">
+                    <option value="">Nothing Selected</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                </select>
+            </div>
+            <div class="filter--option"><label for="processor">processor</label>
+                <select id="processor" onchange="select(event)">
+                    <option value="">Nothing Selected</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                </select>
+            </div>
+            <div class="filter--option">
+                <label for="ram">Ram</label>
+                <select id="ram" onchange="select(event)">
+                    <option value="">Nothing Selected</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                </select>
+            </div>
+            <div class="filter--option" >
+                <label for="hard">HardDisk</label>
+                <select id="hard" onchange="select(event)">
+                    <option value="">Nothing Selected</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                </select>
+            </div>
+            <div class="filter--option"><label for="Display">Display</label>
+                <select id="Display" onchange="select(event)">
+                    <option value="">Nothing Selected</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                    <option value="abc">abc</option>
+                </select>
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>picture</th>
+                    <th>Processor</th>
+                    <th>Ram</th>
+                    <th>HardDisk</th>
+                    <th>Display</th>
+                    <th>Graphic</th>
+                    <th>OS</th>
+                    <th>Weight</th>
+                    <th>Battery</th>
+                    <th>Price</th>
+                    <th>Purchase</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lorem ipsum dolor</td>
+                    <td><img src="https://picsum.photos/100/100?random=1" alt="random pic">
+                    </td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>
+                        <button> Buy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor</td>
+                    <td><img src="https://picsum.photos/100/100?random=2" alt="random pic"></td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>
+                        <button> Buy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor</td>
+                    <td><img src="https://picsum.photos/100/100?random=3" alt="random pic"></td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>Lorem ipsum dolor</td>
+                    <td>
+                        <button> Buy</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<script>
+    function select(event) {
+        const select = document.getElementById(`${event.target.id}`)
+        if (select.value) {
+            select.style.backgroundColor = "navy";
+            select.style.color="white"
+        }
+    }
+</script>
+</body>
+</html>
