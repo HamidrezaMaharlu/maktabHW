@@ -21,11 +21,12 @@ function topSalary(obj) {
 
 //--------------------------q1-2------------------------------------------
 function sort(...args) {
-    const concat=[]
+    const concat = []
     args.forEach(item => concat.push(...item));
     concat.sort((a, b) => b - a);
     console.log(...concat)
 }
+
 // sort ( [5,6,2] , [3,7,1] , [2,4,8] )
 
 //---------------------------q1-3-----------------------------------------
@@ -41,10 +42,11 @@ let values = ["Hare", "Krishna", "Hare", "Krishna",
 
 //---------------------------q1-4------------------------------------------
 const arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
 function aClean(arr) {
     let obj = {};
     //loop over array
-    arr.forEach(item=>{
+    arr.forEach(item => {
         // convert str to lowercase then split and sort it to get the roots of words.
         const sorted = item.toLowerCase().split("").sort().join("");
         // add it to obj
@@ -67,7 +69,19 @@ let keys = map.keys();
 // solution
 // 1. while "map.keys" doesn't return an array (although it can be iterated) we cant use array method on it.
 // 2. if we need array of keys we can use spread operator to convert it to array
-const arrOfKeys =[...keys]
+const arrOfKeys = [...keys]
 arrOfKeys.push("more")
 console.log(arrOfKeys)
+
+//-------------------------index.html------------------------
+function matchPassword() {
+    const pw1 = document.getElementById("password");
+    const pw2 = document.getElementById("re-password");
+    const match = document.getElementById("match")
+    if (pw1.value !== pw2.value) {
+        match.innerText="❌"
+    } else {
+        match.innerText="✔"
+    }
+}
 
