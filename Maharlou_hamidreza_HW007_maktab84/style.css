@@ -121,7 +121,7 @@ textarea:valid + span:after {
     opacity: 0.9;
 }
 
-.registerbtn:hover {
+.registerBtn:hover {
     opacity: 1;
 }
 
