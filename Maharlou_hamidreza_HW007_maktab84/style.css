@@ -130,3 +130,6 @@ textarea:valid + span:after {
         font-size: 50%;
     }
 }
+UL {
+    height: 100px;
+}

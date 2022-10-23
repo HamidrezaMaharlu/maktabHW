@@ -87,4 +87,41 @@ function matchPassword() {
         btn.disabled = false
     }
 }
-
+function checkPassword() {
+    const upper=document.getElementById("upper")
+    const lower=document.getElementById("lower")
+    const num=document.getElementById("num")
+    const count=document.getElementById("count")
+    const symbol=document.getElementById("symbol")
+    const pw1 = document.getElementById("password");
+    if (/^(?=.*[a-z]).{1,}$/.test(pw1.value)){
+    lower.style.display="none"
+    }
+    if (!/^(?=.*[a-z]).{1,}$/.test(pw1.value)){
+        lower.style.display=""
+    }
+    if (/^(?=.*[A-Z]).{1,}$/.test(pw1.value)){
+    upper.style.display="none"
+    }
+    if (!/^(?=.*[A-Z]).{1,}$/.test(pw1.value)){
+        upper.style.display=""
+    }
+    if (/^(?=.*[1-9]).{1,}$/.test(pw1.value)){
+        num.style.display="none"
+    }
+    if (!/^(?=.*[1-9]).{1,}$/.test(pw1.value)){
+        num.style.display=""
+    }
+    if (/^(?=.*[!@#$%^&*_=+-]).{1,}$/.test(pw1.value)){
+        symbol.style.display="none"
+    }
+    if (!/^(?=.*[!@#$%^&*_=+-]).{1,}$/.test(pw1.value)){
+        symbol.style.display=""
+    }
+    if (pw1.value.length>7 && pw1.value.length<13){
+        count.style.display="none"
+    }
+    if (pw1.value.length<8 || pw1.value.length>12){
+        count.style.display=""
+    }
+}

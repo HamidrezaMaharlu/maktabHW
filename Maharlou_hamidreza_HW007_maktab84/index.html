@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Title</title>
@@ -77,14 +76,14 @@
         <label for="password">password:</label>
         <div class="container">
             <input type="text" name="password" id="password" placeholder="Password"
-                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required oninput="checkPassword()">
             <span class="check"></span>
             <ul>
-                <li>At least 1 Uppercase</li>
-                <li>At least 1 Lowercase</li>
-                <li>At least 1 Number</li>
-                <li>At least 1 Symbol, symbol allowed --> !@#$%^&*_=+-</li>
-                <li>Min 8 chars and Max 12 chars</li>
+                <li id="upper">At least 1 Uppercase</li>
+                <li id="lower">At least 1 Lowercase</li>
+                <li id="num">At least 1 Number</li>
+                <li id="symbol">At least 1 Symbol, symbol allowed --> !@#$%^&*_=+-</li>
+                <li id="count">Min 8 chars and Max 12 chars</li>
             </ul>
         </div>
 
