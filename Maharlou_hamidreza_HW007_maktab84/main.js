@@ -67,7 +67,7 @@ let keys = map.keys();
 // keys.push("more")
 
 // solution
-// 1. while "map.keys" doesn't return an array (although it can be iterated) we cant use array method on it.
+// 1. while "map.keys" doesn't return an array (although it can be iterated) we can't use array method on it.
 // 2. if we need array of keys we can use spread operator to convert it to array
 const arrOfKeys = [...keys]
 arrOfKeys.push("more")
